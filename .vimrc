@@ -1,7 +1,8 @@
 set nocompatible              " be iMproved, required
 set number
-"set cursorline
+set cursorline
 "colorscheme desert
+" https://github.com/fatih/molokai
 colorscheme molokai
 filetype off                  " required
 
@@ -34,6 +35,8 @@ Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'fatih/vim-go'
 Plugin 'majutsushi/tagbar'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'sjl/gundo.vim'
 if has("gui_macvim")
 "    Plugin 'Valloric/YouCompleteMe'
 endif
@@ -58,6 +61,12 @@ syntax on
 " autocmd vimenter * NERDTree
 map <C-n> :NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
+nnoremap <F5> :GundoToggle<CR>
+" Window Splits
+map <c-j> <c-w>j
+map <c-k> <c-w>k
+map <c-l> <c-w>l
+map <c-h> <c-w>h
 
 " set status line
 set laststatus=2
