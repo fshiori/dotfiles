@@ -1,5 +1,6 @@
 set nocompatible              " be iMproved, required
 set number
+"set cursorline
 colorscheme desert
 filetype off                  " required
 syntax on
@@ -30,7 +31,8 @@ Plugin 'gmarik/Vundle.vim'
 "Plugin 'user/L9', {'name': 'newL9'}
 Plugin 'scrooloose/nerdtree'
 Plugin 'bling/vim-airline'
-Plugin 'tpope/vim-fugitive' 
+Plugin 'tpope/vim-fugitive'
+Plugin 'fatih/vim-go'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
