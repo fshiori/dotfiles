@@ -1,9 +1,9 @@
 set nocompatible              " be iMproved, required
 set number
 "set cursorline
-colorscheme desert
+"colorscheme desert
+colorscheme molokai
 filetype off                  " required
-syntax on
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -33,12 +33,17 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'fatih/vim-go'
+Plugin 'majutsushi/tagbar'
+if has("gui_macvim")
+"    Plugin 'Valloric/YouCompleteMe'
+endif
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
+syntax on
 "
 " Brief help
 " :PluginList       - lists configured plugins
@@ -52,6 +57,7 @@ filetype plugin indent on    " required
 " NERDTree
 " autocmd vimenter * NERDTree
 map <C-n> :NERDTreeToggle<CR>
+nmap <F8> :TagbarToggle<CR>
 
 " set status line
 set laststatus=2
