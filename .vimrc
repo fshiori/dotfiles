@@ -30,6 +30,7 @@ Plugin 'gmarik/Vundle.vim'
 "Plugin 'user/L9', {'name': 'newL9'}
 Plugin 'scrooloose/nerdtree'
 Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-fugitive' 
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
