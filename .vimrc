@@ -1,6 +1,7 @@
 set nocompatible              " be iMproved, required
 set number
 set cursorline
+set t_Co=256
 "colorscheme desert
 " https://github.com/fatih/molokai
 colorscheme molokai
@@ -72,3 +73,7 @@ map <c-h> <c-w>h
 set laststatus=2
 " enable powerline-fonts
 "let g:airline_powerline_fonts = 1
+au FileType go nmap <leader>r <Plug>(go-run)
+au FileType go nmap <leader>b <Plug>(go-build)
+au FileType go nmap <leader>t <Plug>(go-test)
+au FileType go nmap <leader>c <Plug>(go-coverage)
