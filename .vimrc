@@ -92,7 +92,7 @@ if !has("gui_running")
 endif
 " UltiSnips
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<C-j>"
+let g:UltiSnipsExpandTrigger="<c-j>"
 "let g:UltiSnipsJumpForwardTrigger="<c-j>"
 "let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
@@ -106,10 +106,10 @@ map <leader>sudo :w !sudo tee %
 nmap <F8> :TagbarToggle<CR>
 nnoremap <F5> :GundoToggle<CR>
 " Window Splits
-map <c-j> <c-w>j
-map <c-k> <c-w>k
-map <c-l> <c-w>l
-map <c-h> <c-w>h
+"map <c-j> <c-w>j
+"map <c-k> <c-w>k
+"map <c-l> <c-w>l
+"map <c-h> <c-w>h
 
 " set status line
 set laststatus=2
