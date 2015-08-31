@@ -59,6 +59,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'mileszs/ack.vim'
 Plugin 'kien/ctrlp.vim'
+Bundle 'cespare/vim-toml'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
