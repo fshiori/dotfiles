@@ -49,7 +49,7 @@ Plugin 'tpope/vim-fugitive' " Git wrapper
 Plugin 'fatih/vim-go'
 " :GoInstallBinaries - all necessary binaries
 Plugin 'majutsushi/tagbar'
-"Plugin 'davidhalter/jedi-vim'
+Plugin 'davidhalter/jedi-vim'
 Plugin 'sjl/gundo.vim' " visualize your Vim undo tree
 Plugin 'Valloric/YouCompleteMe'
 " Track the engine.
